@@ -82,17 +82,11 @@ ID,Pred
 2025_1240_1422,0.391
 ...
 Metric:
-
-yaml
-Copy
-Edit
 Brier Score: 0.1892
 📈 Insights & Visualization
 The script includes a histogram to show how confident the model is across matchups:
 
 python
-Copy
-Edit
 sns.histplot(submission_df['Pred'], bins=50, kde=True)
 ✅ Clustering around 0 or 1 → strong confidence
 ⚠️ Centered around 0.5 → uncertainty in matchup
